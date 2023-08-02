@@ -1,4 +1,5 @@
 import "./App.css";
+import Coupon from "./Pages/Coupon/Coupon";
 import Header from "./Pages/Shared/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div >
         <Header />
+        <Coupon/>
       </div>
     </>
   );

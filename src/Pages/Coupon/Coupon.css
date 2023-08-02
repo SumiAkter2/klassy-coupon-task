@@ -1,0 +1,31 @@
+.coupon-box{
+    background: linear-gradient(262.92deg, #a36bfc 4.14%, #f4627a 87.63%);
+    font-family: Inter, sans-serif;
+    border-radius: 10px;
+    min-height: 110px;
+    width: 506px;
+    position: relative;
+}
+.coupon-box .circle-left{
+        background-color: #fff;
+        border-radius: 50%;
+        height: 60px;
+        position: absolute;
+        top: 31%;
+        left: -35px;
+        width: 60px;
+}
+.coupon-box .circle-right {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 60px;
+    position: absolute;
+    top: 31%;
+    right: -35px;
+    width: 60px;
+}
+
+.coupon-detail-button{
+background: #000;
+border-radius: 10px;
+}

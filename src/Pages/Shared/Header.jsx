@@ -8,10 +8,10 @@ import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <div>
+    <div >
       {/* top header section */}
       <div className="top-header flex items-center">
-        <p className="text-xs text-white pl-20 hover:font-semibold ">
+        <p className="text-xs text-white px-20 hover:font-semibold ">
           Customer Care:Need Help ? Just Call - 01310202026 ( 10 AM to 6 PM
           only)
         </p>
@@ -19,7 +19,7 @@ const Header = () => {
 
       {/* middle header section */}
 
-      <div className="flex justify-around items-center middle-header">
+      <div className="flex px-20 justify-between items-center middle-header">
         <div>
           <a href="">
             <img src={brandLogo} alt="brand-logo" />

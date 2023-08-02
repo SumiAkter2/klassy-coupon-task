@@ -1,0 +1,49 @@
+[
+  {
+    "tittle": "ALL NIGHT WINGS 8 PADS",
+    "Description": "10Tk off on Joya Anti-Bacterial Sanitary Napkin All Night Wings 8 Pads Pack",
+    "code": "JNW08",
+    "spend": "200 TK",
+    "maxDis": "300Tk",
+    
+    "validity": "06 Mar 2023",
+    "condition":""
+  },
+  {
+    "tittle": "ULTRA COMFORT WINGS 8 PADS PACK",
+    "Description": "10tk off on Joya Anti-Bacterial Sanitary Napkin Ultra Comfort Wings 8 Pads Pack",
+    "code": "JAB08",
+    "spend": "200Tk",
+    "maxDis": "20Tk",
+      "condition":"",
+    "validity": "05 Mar 2023"
+  },
+  {
+    "tittle": "JOYA SANITARY NAPKIN BELT SYSTEM 8 PADS PACK",
+    "Description": "10tk off on Joya Sanitary Napkin Belt System 8 Pads Pack",
+    "code": "JPB08",
+    "spend": "30Tk",
+    "maxDis": "200Tk",
+    "condition":"",
+    "validity": "26 Mar 2023"
+  },
+  {
+    "tittle": "JOYA SANITARY NAPKIN WINGS REGULAR 8 PADS PACK",
+    "Description": "Joya Sanitary Napkin Wings Regular 8 Pads Pack",
+    "code": "JWR08",
+    "spend": "200Tk",
+    "maxDis": "30Tk",
+    "condition":"",
+    "validity": "05 Mar 2023"
+  },
+  {
+    "tittle": "FREE DELIVERY MINIMUM SPEND - 1200",
+    "Description": "Special Offer Alert! Get FREE Delivery on Orders Over 1200 BDT! Welcome to KlassyMissy.com, your ultimate destination for beauty and skincare. We're thrilled to offer an exclusive deal for our new customers that you simply can't resist! Shop with us today and enjoy FREE nationwide delivery on all purchases over 1200 BDT. No shipping charges mean more savings in your pocket! Just use coupon code '1200' at checkout and embrace a hassle-free shopping experience. But hurry! This offer is only available to new customers, and you can use the coupon code twice. So don't miss your chance to treat yourself to our premium beauty and skincare products without worrying about any delivery fees. Visit KlassyMissy.com now and explore our incredible collection. From radiant makeup to rejuvenating skincare, we have everything you need to enhance your natural beauty. Experience convenience, luxury, and incredible savings all in one place. Unleash your inner beauty and indulge in the ultimate shopping spree at KlassyMissy.com. Remember, this offer won't last forever, so seize the opportunity today! (Note: This offer is valid as of the publication date and is subject to change. Please refer to the website for the most up-to-date information and terms and conditions.",
+    "code": "FD1200",
+    "spend": "120Tk",
+    "maxDis": "1200Tk",
+    "condition":"FREE DELIVERY MINIMUM SPEND 1200 BDT",
+    "validity": "6 Mar 2023"
+  }
+  
+]
