@@ -7,3 +7,17 @@
     width: 84px;
     height: 84px;
 }
+
+
+.middle-footer{
+    background-color: #000;
+    color: #fff;
+    font-family: Lato, sans-serif !important;
+    padding-top: 64px;
+    padding-bottom: 30px;
+}
+.social-img img{
+    width: 24px;
+    height: 24px;
+   
+}
