@@ -16,10 +16,28 @@ import img1 from "../../assets/images/footer/bikash.png";
 import img2 from "../../assets/images/footer/img1.png";
 import img3 from "../../assets/images/footer/img2.png";
 import img4 from "../../assets/images/footer/img4.png";
-// import { ImOffice } from "react-icons/im";
+import ScrollToTop from "react-scroll-to-top";
+import {BiSolidUpArrow} from "react-icons/bi"
 const Footer = () => {
   return (
-    <div className>
+    <div>
+      <ScrollToTop
+        style={{
+                boxShadow: "none",
+            height:"24px",
+            width:"24px",
+          backgroundColor: "#000",
+          borderRadius: "50%",
+          zIndex: 20,
+        }}
+        component={
+          <BiSolidUpArrow size="14px"
+            style={{ fontSize: "20px", margin: "0 auto", color: "#fff" }}
+          />
+        }
+        smooth
+      />
+
       {/* top footer section */}
       <div className="top-footer">
         <p className="text-sm text-center text-white">
@@ -95,11 +113,11 @@ const Footer = () => {
       {/* bottom-footer section */}
       <div className="bottom-footer px-28 flex justify-start items-center">
         <p>&#169; Copyright 2023 All Rights Reserved By Klassy Missy</p>
-              <div className="flex justify-center items-center h-10 w-10 lg:ml-52">
-                  <img src={img1} alt="img" />
-                  <img src={img2} alt="img" />
-                  <img src={img3} alt="img" />
-                  <img src={img4} alt="img" />
+        <div className="flex justify-center items-center h-10 w-10 lg:ml-52">
+          <img src={img1} alt="img" />
+          <img src={img2} alt="img" />
+          <img src={img3} alt="img" />
+          <img src={img4} alt="img" />
         </div>
       </div>
     </div>
