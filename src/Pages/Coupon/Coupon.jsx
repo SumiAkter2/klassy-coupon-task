@@ -8,7 +8,7 @@ const Coupon = () => {
       .then((res) => res.json())
       .then((data) => setCoupons(data));
   }, []);
-  console.log(coupons);
+//   console.log(coupons);
   return (
     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-12  px-28 py-16">
           {
