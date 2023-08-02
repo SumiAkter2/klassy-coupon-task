@@ -1,9 +1,12 @@
 import "./App.css";
+import Header from "./Pages/Shared/Header";
 
 function App() {
   return (
     <>
-      <h1>Hello klassy missy</h1>
+      <div >
+        <Header />
+      </div>
     </>
   );
 }
