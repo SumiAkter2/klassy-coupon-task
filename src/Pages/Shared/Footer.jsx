@@ -35,33 +35,71 @@ const Footer = () => {
         </div>
       </div>
       {/* middle footer */}
-      <div>
-        <div className="middle-footer flex justify-between items-center px-28">
+
+      <div className="middle-footer flex justify-between items-start px-28">
+        <div className="lg:w-7/12 ">
+          <img src={logo} alt="brand-logo" />
+          <p className="text-sm py-4">
+            Klassy Missy is the largest online retailer of premium beauty
+            products in Bangladesh and one of the fastest growing Beauty
+            E-commerce Company In Bangladesh. Our focus is to make you feel
+            special. Our maths is simple: Beauty is more then skin deep. That’s
+            why we’re as independent and inclusive as possible; providing
+            trustworthy reviews and expert insights, so you can explore Trends ,
+            find new favourites and discover the products that make you feel
+            like you. We source exceptional & authentic products from all over
+            the world for you. There's over 200 Makeup & Skin care brand at your
+            fingertips.
+          </p>
+          <div className="flex justify-start items-center gap-4 social-img pt-4">
+            <img src={socailLogo1} alt="social-logo" />
+            <img src={socailLogo2} alt="social-logo" />
+            <img src={socailLogo3} alt="social-logo" />
+            <img src={socailLogo4} alt="social-logo" />
+            <img src={socailLogo5} alt="social-logo" />
+            <img src={socailLogo6} alt="social-logo" />
+          </div>
+        </div>
+
+        <div className="lg:w-5/12 px-12 flex justify-between items-start gap-4 text-sm">
           <div>
-            <img src={logo} alt="brand-logo" />
-            <p className="text-xs py-4">
-              Klassy Missy is the largest online retailer of premium beauty
-              products in Bangladesh and one of the fastest growing Beauty
-              E-commerce Company In Bangladesh. Our focus is to make you feel
-              special. Our maths is simple: Beauty is more then skin deep.
-              That’s why we’re as independent and inclusive as possible;
-              providing trustworthy reviews and expert insights, so you can
-              explore Trends , find new favourites and discover the products
-              that make you feel like you. We source exceptional & authentic
-              products from all over the world for you. There's over 200 Makeup
-              & Skin care brand at your fingertips.
-            </p>
-            <div className="flex justify-center items-center gap-4 social-img">
-              <img src={socailLogo1} alt="social-logo" />
-              <img src={socailLogo2} alt="social-logo" />
-              <img src={socailLogo3} alt="social-logo" />
-              <img src={socailLogo4} alt="social-logo" />
-              <img src={socailLogo5} alt="social-logo" />
-              <img src={socailLogo6} alt="social-logo" />
+            <p className="text-sm pb-4">IMPORTANT LINKS</p>
+            <div className="grid text-xs  gap-y-4 ">
+              <a href="">- FAQ </a>
+              <a href="">- Our Story & Team</a>
+              <a href="">- Career</a>
+              <a href="">- About Us</a>
+              <a href="">- Contacts </a>
+              <a href="">- Pre Order Terms and Conditions</a>
+              <a href="">- Becoming a supplier</a>
+              <a href="">- Terms and Conditions</a>
+              <a href="">- Offer & Campaings Details</a>
+              <a href="">- Return & Refund Policy</a>
+              <a href="">- Delivery Information</a>
+              <a href="">- General Products FAQ</a>
             </div>
           </div>
 
-          <div className="flex justify-between items-center gap-4"></div>
+          <div className="pl-12 grid gap-y-2">
+            <p className="pb-4">CONTACT INFO </p>
+
+            <p>01310202026</p>
+            <small>Email: hello@klassy.com.bd </small>
+
+            <p className="pt-4">ADDRESS</p>
+            <small>465C Noyatola, moghbazar, Dhaka</small>
+          </div>
+        </div>
+      </div>
+
+      {/* bottom-footer section */}
+      <div className="bottom-footer px-28 flex justify-start items-center">
+        <p>&#169; Copyright 2023 All Rights Reserved By Klassy Missy</p>
+              <div className="flex justify-center items-center h-10 w-10 lg:ml-52">
+                  <img src={img1} alt="img" />
+                  <img src={img2} alt="img" />
+                  <img src={img3} alt="img" />
+                  <img src={img4} alt="img" />
         </div>
       </div>
     </div>
