@@ -7,7 +7,6 @@
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, .12);
     color: #000;
-    font-size: 12px;
     height: 72px;
 }
 .middle-header input{
@@ -21,9 +20,12 @@
 }
 .middle-header input:focus{
     outline:1px solid #d3066d ;
-    /* border:; */
+    
 }
 .middle-header ul li a{
 font-size: 12px;
 font-weight: 300;
+}
+.middle-header span{
+    background: #212121;
 }

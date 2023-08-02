@@ -2,6 +2,8 @@ import "./Header.css";
 import brandLogo from "../../assets/images/klassy-missy-logo.png";
 import signIn from "../../assets/images/sign_in_icon.png";
 import cart from "../../assets/images/carticon.png";
+import { ImSearch } from "react-icons/im";
+
 const Header = () => {
   return (
     <div>
@@ -21,9 +23,21 @@ const Header = () => {
             <img src={brandLogo} alt="brand-logo" />
           </a>
         </div>
-        <div>
-          <input className="" type="text" name="search" id="search" placeholder="Search for products" />
+        <div className="relative">
+          <input
+            className="text-xs text-thin"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for products"
+          />
+          <ImSearch
+            className="absolute right-2 bottom-2"
+            size="18px"
+            color="#d3066d"
+          />
         </div>
+
         <div>
           <ul className="flex justify-between items-center gap-5">
             <li className="flex justify-between items-center gap-2">
@@ -32,7 +46,12 @@ const Header = () => {
             </li>
             <li className="flex justify-between items-center gap-2">
               <a href="">MY BAG</a>
-              <img src={cart} alt="cart logo" />
+              <div className="relative">
+                <img src={cart} alt="cart logo" />
+                <span className="absolute text-white rounded-full w-4 h-4 px-1 text-xs left-5 bottom-3">
+                  0
+                </span>
+              </div>
             </li>
           </ul>
         </div>
