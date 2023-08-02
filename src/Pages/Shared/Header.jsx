@@ -3,6 +3,8 @@ import brandLogo from "../../assets/images/klassy-missy-logo.png";
 import signIn from "../../assets/images/sign_in_icon.png";
 import cart from "../../assets/images/carticon.png";
 import { ImSearch } from "react-icons/im";
+import { FiMenu } from "react-icons/fi";
+
 
 const Header = () => {
   return (
@@ -55,6 +57,35 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* category header  section */}
+      <div>
+        <ul className="category-header rounded-full flex justify-center items-center uppercase gap-7">
+          <li>
+            <a href="">
+              <FiMenu size="25px" />
+            </a>
+          </li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Brands</a>
+          </li>
+          <li>
+            <a href="">PreOrder</a>
+          </li>
+          <li>
+            <a href="">Campaigns</a>
+          </li>
+          <li>
+            <a href="">Coupons</a>
+          </li>
+          <li>
+            <a href="">Discounts</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
