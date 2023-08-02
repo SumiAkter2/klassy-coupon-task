@@ -1,14 +1,38 @@
 import "./Header.css";
-import brandLogo from "../../assets/images/klassy-missy-logo.png";
-import signIn from "../../assets/images/sign_in_icon.png";
-import cart from "../../assets/images/carticon.png";
+import brandLogo from "../../../assets/images/klassy-missy-logo.png";
+import signIn from "../../../assets/images/sign_in_icon.png";
+import cart from "../../../assets/images/carticon.png";
 import { ImSearch } from "react-icons/im";
 import { FiMenu } from "react-icons/fi";
-
+import { useState } from "react";
+import Modal from "react-modal";
 
 const Header = () => {
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+   let subtitle;
+   const [modalIsOpen, setIsOpen] = useState(false);
+   function openModal() {
+     setIsOpen(true);
+     
+   }
+   function afterOpenModal() {
+     document.style.color = "#444";
+
+   }
+   function closeModal() {
+     setIsOpen(false);
+   }
   return (
-    <div >
+    <div>
       {/* top header section */}
       <div className="top-header flex items-center">
         <p className="text-xs text-white px-28 hover:font-semibold ">
@@ -42,9 +66,14 @@ const Header = () => {
 
         <div>
           <ul className="flex justify-between items-center gap-5">
-            <li className="flex justify-between items-center gap-2">
-              <a href="">SIGN IN</a>
-              <img src={signIn} alt="Sign In logo" />
+            <li>
+              <a
+                onClick={openModal}
+                className="flex justify-between items-center gap-2"
+              >
+                SIGN IN
+                <img src={signIn} alt="Sign In logo" />
+              </a>
             </li>
             <li className="flex justify-between items-center gap-2">
               <a href="">MY BAG</a>
@@ -87,6 +116,27 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
+      {/* modal */}
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h1>dddddddddddddddddd</h1>
+        {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form> */}
+      </Modal>
     </div>
   );
 };

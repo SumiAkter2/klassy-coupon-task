@@ -1,9 +1,10 @@
 import Modal from "react-modal";
 import "./Coupon.css";
+import { useState } from "react";
 
 const CouponDetails = ({ coupon }) => {
-      let subtitle;
-      const [modalIsOpen, setIsOpen] = React.useState(false);
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = useState(false);
   const { tittle, code, Description, maxDis, spend, validity, condition } =
     coupon;
   function openModal() {

@@ -1,7 +1,9 @@
 import "./App.css";
 import Coupon from "./Pages/Coupon/Coupon";
-import Footer from "./Pages/Shared/Footer";
-import Header from "./Pages/Shared/Header";
+import Footer from "./Pages/Shared/Footer/Footer";
+import Header from "./Pages/Shared/Header/Header";
+
+
 
 function App() {
   return (
