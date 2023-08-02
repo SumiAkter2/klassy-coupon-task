@@ -2,7 +2,7 @@
     background: linear-gradient(262.92deg, #a36bfc 4.14%, #f4627a 87.63%);
     font-family: Inter, sans-serif;
     border-radius: 10px;
-    min-height: 110px;
+    height: 165px;
     width: 506px;
     position: relative;
 }
@@ -26,6 +26,11 @@
 }
 
 .coupon-detail-button{
-background: #000;
-border-radius: 10px;
+background: #212121;
+border-radius: 5px;
+font-weight: 700;
+height: 16px;
+width: 65px;
+font-size: 10px;
+
 }
