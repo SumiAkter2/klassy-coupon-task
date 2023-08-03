@@ -4,8 +4,8 @@
     "Description": "10Tk off on Joya Anti-Bacterial Sanitary Napkin All Night Wings 8 Pads Pack",
     "code": "JNW08",
     "spend": "200 TK",
-    "maxDis": "300Tk",
-    
+    "maxDis": "30Tk",
+    "img":"https://i.ibb.co/wW624HW/Ultra-Comfort-Wings-8-Pads-Pack-thumbnail.webp",
     "validity": "06 Mar 2023",
     "condition":""
   },
@@ -16,25 +16,28 @@
     "spend": "200Tk",
     "maxDis": "20Tk",
       "condition":"",
-    "validity": "05 Mar 2023"
+    "validity": "05 Mar 2023",
+     "img":"https://i.ibb.co/0rjKp5z/All-Night-Wings-8-Pads-thumbnail.webp"
   },
   {
     "tittle": "JOYA SANITARY NAPKIN BELT SYSTEM 8 PADS PACK",
     "Description": "10tk off on Joya Sanitary Napkin Belt System 8 Pads Pack",
     "code": "JPB08",
-    "spend": "30Tk",
-    "maxDis": "200Tk",
+    "spend": "20Tk",
+    "maxDis": "300Tk",
     "condition":"",
-    "validity": "26 Mar 2023"
+    "validity": "26 Mar 2023",
+     "img":"https://i.ibb.co/c86v2qn/Joya-Sanitary-Napkin-Wings-Regular-8-Pads-Pack-thumbnail.webp"
   },
   {
     "tittle": "JOYA SANITARY NAPKIN WINGS REGULAR 8 PADS PACK",
     "Description": "Joya Sanitary Napkin Wings Regular 8 Pads Pack",
     "code": "JWR08",
-    "spend": "200Tk",
-    "maxDis": "30Tk",
+    "spend": "20Tk",
+    "maxDis": "300Tk",
     "condition":"",
-    "validity": "05 Mar 2023"
+    "validity": "05 Mar 2023",
+     "img":"https://i.ibb.co/c86v2qn/Joya-Sanitary-Napkin-Wings-Regular-8-Pads-Pack-thumbnail.webp"
   },
   {
     "tittle": "FREE DELIVERY MINIMUM SPEND - 1200",
@@ -43,7 +46,8 @@
     "spend": "120Tk",
     "maxDis": "1200Tk",
     "condition":"FREE DELIVERY MINIMUM SPEND 1200 BDT",
-    "validity": "6 Mar 2023"
+    "validity": "6 Mar 2023",
+     "img":"https://i.ibb.co/khQzgF4/FREE-DELIVERY-Minimum-Spend-1200-thumbnail.webp"
   }
   
 ]

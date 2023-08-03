@@ -1,18 +1,31 @@
 import Modal from "react-modal";
 import "./Coupon.css";
 import { useState } from "react";
+import { PiCopyFill } from "react-icons/pi";
 
 const CouponDetails = ({ coupon }) => {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const { tittle, code, Description, maxDis, spend, validity, condition } =
+  const { tittle, img, code, Description, maxDis, spend, validity, condition } =
     coupon;
+
+  const customStyles = {
+    content: {
+      width: "480px",
+      height:"100%",
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
   function openModal() {
     setIsOpen(true);
   }
 
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
     subtitle.style.color = "#f00";
   }
 
@@ -26,11 +39,14 @@ const CouponDetails = ({ coupon }) => {
         <div className="circle-left absolute"></div>
 
         {/* coupon info */}
-        <a href="" onClick={openModal}>
+        <a onClick={openModal}>
           <div className="flex justify-between items-center text-white text-xs">
             <div className="lg:w-3/5 px-12  border-dashed  border-r-2 border-white py-6">
-              <h3 className="text-sm pb-2">{tittle.slice(0, 22)}...</h3>
-              <p className="pb-1 text-xs"> {Description.slice(0, 60)}... </p>
+              <h3 className="text-sm pb-2">{tittle.slice(0, 20) + "..."}</h3>
+              <p className="pb-1 text-xs">
+                {" "}
+                {Description.slice(0, 60) + "..."}{" "}
+              </p>
               <p className="font-bold pt-2">CODE:{code} </p>
               <button className="coupon-detail-button mt-2 ">
                 See Details
@@ -58,19 +74,39 @@ const CouponDetails = ({ coupon }) => {
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        // style={customStyles}
+        style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
+        <div className="flex justify-between items-center ">
+          <img className="w-52" src={img} alt="product-img" />
+          <div className="text-xs font-bold p-5">
+            <p className="text-[#d3066d] text-xl font-bold pb-2">{spend}</p>
+            <p>Max Discount </p>
+            <p>Min Discount {maxDis}</p>
+            <p className="font-thin pt-2">Valid Until {validity}</p>
+          </div>
+        </div>
+
+        <div className="text-xl font-bold">
+          <h1>{tittle} </h1>
+          <p className="text-xs py-2 font-thin pl-6 leading-6">
+            {Description}{" "}
+          </p>
+          <p className="py-2 ">CONDITIONS: </p>
+          <li className="text-sm font-thin pb-12 ">
+            {condition ? condition : "Not Available"}{" "}
+          </li>
+          <div className="flex items-center justify-center border-dashed  border-t-2 border-[#000000a5]">
+            <div className="pt-6">
+              <p className="text-sm text-center text-[#d3066d] border border-dashed border-[#d3066d] p-2">
+                CODE:{code}
+              </p>
+              <button className="copy-code-button flex items-center justify-center gap-x-2">
+                <PiCopyFill /> COPY CODE
+              </button>
+            </div>
+          </div>
+        </div>
       </Modal>
     </div>
   );

@@ -34,3 +34,12 @@ width: 65px;
 font-size: 10px;
 
 }
+
+.copy-code-button{
+    margin-top: 20px;
+    background: #d3066d;
+    color:#fff;
+    padding: 2px 4px;
+    font-size: 12px;
+    width: 150px;
+}
