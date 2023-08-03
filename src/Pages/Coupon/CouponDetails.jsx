@@ -113,8 +113,6 @@ const CouponDetails = ({ coupon }) => {
               <button
                 onClick={() => {
                   codeCopy(code);
-                  // navigator.clipboard.writeText(`${code}`);
-                  // toast("ddddd");
                 }}
                 className="copy-code-button flex items-center justify-center gap-x-2"
               >

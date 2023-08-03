@@ -1,8 +1,20 @@
-# React + Vite
+# Klassy Missy Task:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Uses:
 
-Currently, two official plugins are available:
+- React + vite,
+- Tailwind
+- Axios
+- React icons
+- SweetAlert
+- react modal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Description:
+
+- Create Coupon page only with Header and footer
+- keep Header and footer in share folder.
+- Create routes in routes folder
+- Fetching data by using axios
+- Showing coupons in Coupon component
+- keep coupons details in CouponDetails component
+
