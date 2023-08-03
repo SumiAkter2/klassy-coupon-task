@@ -21,6 +21,7 @@ import {BiSolidUpArrow} from "react-icons/bi"
 const Footer = () => {
   return (
     <div>
+      {/* scroll to top */}
       <ScrollToTop
         style={{
                 boxShadow: "none",
@@ -66,7 +67,7 @@ const Footer = () => {
             trustworthy reviews and expert insights, so you can explore Trends ,
             find new favourites and discover the products that make you feel
             like you. We source exceptional & authentic products from all over
-            the world for you. There's over 200 Makeup & Skin care brand at your
+            the world for you. There is over 200 Makeup & Skin care brand at your
             fingertips.
           </p>
           <div className="flex justify-start items-center gap-4 social-img pt-4">

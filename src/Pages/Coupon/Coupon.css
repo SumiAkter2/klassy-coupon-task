@@ -1,4 +1,5 @@
-.coupon-box{
+/* for coupon box */
+.coupon-box{ 
     background: linear-gradient(262.92deg, #a36bfc 4.14%, #f4627a 87.63%);
     font-family: Inter, sans-serif;
     border-radius: 10px;
@@ -24,7 +25,7 @@
     right: -35px;
     width: 60px;
 }
-
+/* details button */
 .coupon-detail-button{
 background: #212121;
 border-radius: 5px;
@@ -34,7 +35,7 @@ width: 65px;
 font-size: 10px;
 
 }
-
+/* copy button */
 .copy-code-button{
     margin-top: 20px;
     background: #d3066d;

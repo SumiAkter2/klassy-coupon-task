@@ -1,8 +1,10 @@
+/* top header */
 .top-header{
     background: #d3066d;
     height: 40px;
     margin: auto;
 }
+/* middle header */
 .middle-header{
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, .12);
@@ -29,20 +31,9 @@ font-weight: 300;
 .middle-header span{
     background: #212121;
 }
+
+/* category header */
 .category-header{
 height: 45px;
 border-bottom: 1px solid rgba(0, 0, 0, .12);
-}
-.category-header li a{
-color: #646464;
-font-size: 13px;
-font-weight: 600;
-}
-.category-header li a:hover {
-    color: #d3066d;
-    transition: all .2s ease-in-out;
-     
-}
-.category-header li a:active{
-    color: #d3066d;
 }

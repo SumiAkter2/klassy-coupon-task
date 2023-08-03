@@ -1,18 +1,27 @@
 import Modal from "react-modal";
 import "./Coupon.css";
 import { useState } from "react";
+  import "react-toastify/dist/ReactToastify.css";
 import { PiCopyFill } from "react-icons/pi";
+import { toast } from "react-toastify";
 
 const CouponDetails = ({ coupon }) => {
+  const [copy, setCopy] = useState("");
+  // console.log(copy);
+ 
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   const { tittle, img, code, Description, maxDis, spend, validity, condition } =
     coupon;
-
+  //  const codeCopy = (coupon) => {
+  //    setCopy( navigator.clipboard.writeText({code});
+  //    console.log(coupon.code);
+  //  };
+  // modal
   const customStyles = {
     content: {
       width: "480px",
-      height:"100%",
+      height: "100%",
       top: "50%",
       left: "50%",
       right: "auto",
@@ -38,7 +47,7 @@ const CouponDetails = ({ coupon }) => {
       <div className="coupon-box relative">
         <div className="circle-left absolute"></div>
 
-        {/* coupon info */}
+        {/* coupon info section */}
         <a onClick={openModal}>
           <div className="flex justify-between items-center text-white text-xs">
             <div className="lg:w-3/5 px-12  border-dashed  border-r-2 border-white py-6">
@@ -69,7 +78,7 @@ const CouponDetails = ({ coupon }) => {
         </a>
         <div className="circle-right absolute"></div>
       </div>
-
+      {/* modal */}
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -77,8 +86,9 @@ const CouponDetails = ({ coupon }) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
+        {/* top modal */}
         <div className="flex justify-between items-center ">
-          <img className="w-52" src={img} alt="product-img" />
+          <img className="w-52 rounded-lg" src={img} alt="product-img" />
           <div className="text-xs font-bold p-5">
             <p className="text-[#d3066d] text-xl font-bold pb-2">{spend}</p>
             <p>Max Discount </p>
@@ -86,8 +96,8 @@ const CouponDetails = ({ coupon }) => {
             <p className="font-thin pt-2">Valid Until {validity}</p>
           </div>
         </div>
-
-        <div className="text-xl font-bold">
+        {/*  bottom modal */}
+        <div className="text-xl font-bold pt-6">
           <h1>{tittle} </h1>
           <p className="text-xs py-2 font-thin pl-6 leading-6">
             {Description}{" "}
@@ -101,7 +111,16 @@ const CouponDetails = ({ coupon }) => {
               <p className="text-sm text-center text-[#d3066d] border border-dashed border-[#d3066d] p-2">
                 CODE:{code}
               </p>
-              <button className="copy-code-button flex items-center justify-center gap-x-2">
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(`${code}`)
+                    toast('ddddd')
+                    ;
+                }}
+                
+                value={code}
+                className="copy-code-button flex items-center justify-center gap-x-2"
+              >
                 <PiCopyFill /> COPY CODE
               </button>
             </div>

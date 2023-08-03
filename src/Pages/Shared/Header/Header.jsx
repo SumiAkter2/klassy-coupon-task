@@ -4,11 +4,9 @@ import signIn from "../../../assets/images/sign_in_icon.png";
 import cart from "../../../assets/images/carticon.png";
 import { ImSearch } from "react-icons/im";
 import { FiMenu } from "react-icons/fi";
-
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
   return (
     <div>
       {/* top header section */}
@@ -22,11 +20,13 @@ const Header = () => {
       {/* middle header section */}
 
       <div className="flex px-28 justify-between items-center middle-header">
+        {/* brand logo */}
         <div>
-          <a href="">
+          <Link className="hover:text-[#d3066d]" to="/coupon">
             <img src={brandLogo} alt="brand-logo" />
-          </a>
+          </Link>
         </div>
+        {/* input */}
         <div className="relative">
           <input
             className="text-xs text-thin"
@@ -41,20 +41,19 @@ const Header = () => {
             color="#d3066d"
           />
         </div>
-
+        {/* item */}
         <div>
           <ul className="flex justify-between items-center gap-5">
             <li>
-              <a
-                
-                className="flex justify-between items-center gap-2"
-              >
+              <Link className="flex justify-between items-center gap-2 hover:text-[#d3066d]">
                 SIGN IN
                 <img src={signIn} alt="Sign In logo" />
-              </a>
+              </Link>
             </li>
             <li className="flex justify-between items-center gap-2">
-              <a href="">MY BAG</a>
+              <Link className="hover:text-[#d3066d]" to="/coupon">
+                MY BAG
+              </Link>
               <div className="relative">
                 <img src={cart} alt="cart logo" />
                 <span className="absolute text-white rounded-full w-4 h-4 px-1 text-xs left-5 bottom-3">
@@ -68,34 +67,44 @@ const Header = () => {
 
       {/* category header  section */}
       <div>
-        <ul className="category-header rounded-full flex justify-center items-center uppercase gap-7">
+        <ul className="category-header rounded-full flex justify-center items-center uppercase gap-7 text-sm font-bold text-[#646464]">
           <li>
-            <a href="">
+            <Link className=" hover:text-[#d3066d]" to="/coupon">
               <FiMenu size="25px" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">Home</a>
+            <Link className="hover:text-[#d3066d]" to="/coupon">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="">Brands</a>
+            <Link className="hover:text-[#d3066d]" to="/coupon">
+              Brands
+            </Link>
           </li>
           <li>
-            <a href="">PreOrder</a>
+            <Link className="hover:text-[#d3066d]" to="/coupon">
+              PreOrder
+            </Link>
           </li>
           <li>
-            <a href="">Campaigns</a>
+            <Link className="hover:text-[#d3066d]" to="/coupon">
+              Campaigns
+            </Link>
           </li>
           <li>
-            <a href="">Coupons</a>
+            <Link className="text-[#d3066d]" to="/coupon">
+              Coupons
+            </Link>
           </li>
           <li>
-            <a href="">Discounts</a>
+            <Link className="hover:text-[#d3066d]" to="/coupon">
+              Discounts
+            </Link>
           </li>
         </ul>
       </div>
-
-    
     </div>
   );
 };

@@ -1,18 +1,15 @@
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Coupon from "./Pages/Coupon/Coupon";
-import Footer from "./Pages/Shared/Footer/Footer";
-import Header from "./Pages/Shared/Header/Header";
 
-
+import routes from "./routes/routes";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <>
-      <div >
-        <Header />
-        <Coupon />
-        <Footer/>
-      </div>
+      <RouterProvider router={routes}>
+        <ToastContainer />
+      </RouterProvider>
     </>
   );
 }

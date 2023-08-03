@@ -1,3 +1,4 @@
+/* top footer */
 .top-footer{
         background-color: #1c1c1c;
         height: 225px;
@@ -8,7 +9,7 @@
     height: 84px;
 }
 
-
+/* middle footet */
 .middle-footer{
     background-color: #000;
     color: #fff;
@@ -21,6 +22,7 @@
     height: 24px;
    
 }
+/* bottom footer */
 .bottom-footer{
         background-color: #d3066d;
         color: #fff;
