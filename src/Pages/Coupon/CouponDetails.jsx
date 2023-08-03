@@ -1,22 +1,21 @@
 import Modal from "react-modal";
 import "./Coupon.css";
 import { useState } from "react";
-  import "react-toastify/dist/ReactToastify.css";
 import { PiCopyFill } from "react-icons/pi";
-import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const CouponDetails = ({ coupon }) => {
   const [copy, setCopy] = useState("");
-  // console.log(copy);
- 
+
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   const { tittle, img, code, Description, maxDis, spend, validity, condition } =
     coupon;
-  //  const codeCopy = (coupon) => {
-  //    setCopy( navigator.clipboard.writeText({code});
-  //    console.log(coupon.code);
-  //  };
+  const codeCopy = (code) => {
+    const copyText = navigator.clipboard.writeText(code);
+    setCopy(copyText);
+    Swal.fire("SuccessFully copied");
+  };
   // modal
   const customStyles = {
     content: {
@@ -113,12 +112,10 @@ const CouponDetails = ({ coupon }) => {
               </p>
               <button
                 onClick={() => {
-                  navigator.clipboard.writeText(`${code}`)
-                    toast('ddddd')
-                    ;
+                  codeCopy(code);
+                  // navigator.clipboard.writeText(`${code}`);
+                  // toast("ddddd");
                 }}
-                
-                value={code}
                 className="copy-code-button flex items-center justify-center gap-x-2"
               >
                 <PiCopyFill /> COPY CODE
